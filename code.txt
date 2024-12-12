@@ -1,0 +1,75 @@
+app.post('/evaluate', (req, res) => {
+    // Access form data from request body
+    const formData = req.body;
+
+    // Store form data in an array
+    submissions.push(formData);
+
+    // options
+    const ds = "Data science is a multidisciplinary field that uses statistical methods, algorithms, and technologies to analyze and interpret complex data. It aims to extract meaningful insights and patterns from large datasets to support decision-making. Data science combines elements of mathematics, computer science, and domain expertise to solve real-world problems."
+    const ai = "AI (Artificial Intelligence) refers to the development of computer systems capable of performing tasks that typically require human intelligence, such as understanding language, recognizing patterns, and making decisions. It uses algorithms and models to process data, learn from it, and improve performance over time. AI powers technologies like machine learning, natural language processing, and robotics."
+    const wd = "Web development involves building and maintaining websites, including both front-end (what users interact with) and back-end (server-side logic, databases). The front-end focuses on user experience using HTML, CSS, and JavaScript, while the back-end handles data processing and storage. Web developers ensure the functionality, performance, and security of websites and web applications."
+    const wdes = "Web designing is the process of creating visually appealing and functional layouts for websites, focusing on user experience (UX) and user interface (UI). It involves structuring content, designing visual elements, and optimizing for responsiveness across devices. Good web design enhances usability, accessibility, and aesthetics to engage users effectively."
+    const sd = "Software development is the process of designing, creating, testing, and maintaining applications or systems. It involves writing code, debugging, and problem-solving to meet specific user or business requirements. The process follows stages like planning, implementation, testing, and deployment to deliver functional software."
+
+    // Initialize a dictionary to count occurrences of each key
+    const keyCounts = {};
+    var field_of_interest = '';
+    var details = '';
+
+    // Count occurrences of each key
+    for (let key in formData) {
+        if (formData.hasOwnProperty(key)) {
+            const value = formData[key];
+            if (!keyCounts[value]) {
+                keyCounts[value] = 0;
+            }
+            keyCounts[value]++;
+        }
+    }
+
+    // Find the key with the highest number of occurrences
+    let maxKey = '';
+    let maxCount = 0;
+    for (let key in keyCounts) {
+        if (keyCounts.hasOwnProperty(key) && keyCounts[key] > maxCount) {
+            maxCount = keyCounts[key];
+            maxKey = key;
+        }
+    }
+
+    // Create response HTML with the key with the highest occurrences
+    let responseHTML = `
+        <h2>Key with Highest Number of Occurrences:</h2>
+        <p>${maxKey}: ${maxCount} occurrences</p>
+    `;
+
+    // Debug message for the console
+    if (maxKey === 'data_science') {
+      field_of_interest='Data Science';
+      details = "Data science is a multidisciplinary field that uses statistical methods, algorithms, and technologies to analyze and interpret complex data. It aims to extract meaningful insights and patterns from large datasets to support decision-making. Data science combines elements of mathematics, computer science, and domain expertise to solve real-world problems."
+        console.log("Data Science is your domain");
+    } else if (maxKey === 'web_dev') {
+      field_of_interest='Web Development';
+      details = "Web development involves building and maintaining websites, including both front-end (what users interact with) and back-end (server-side logic, databases). The front-end focuses on user experience using HTML, CSS, and JavaScript, while the back-end handles data processing and storage. Web developers ensure the functionality, performance, and security of websites and web applications."
+        console.log("Web Development is your domain");
+    } else if (maxKey === 'software_dev') {
+      field_of_interest='Software Development';
+      details = "Software development is the process of designing, creating, testing, and maintaining applications or systems. It involves writing code, debugging, and problem-solving to meet specific user or business requirements. The process follows stages like planning, implementation, testing, and deployment to deliver functional software."
+        console.log("Software Development is your domain");
+    } else if (maxKey === 'web_design') {
+      field_of_interest='Web Design';
+      details = "Web designing is the process of creating visually appealing and functional layouts for websites, focusing on user experience (UX) and user interface (UI). It involves structuring content, designing visual elements, and optimizing for responsiveness across devices. Good web design enhances usability, accessibility, and aesthetics to engage users effectively."
+        console.log("Web Design is your domain");
+    } else if (maxKey === 'ai_engineer') {
+      field_of_interest='AI Engineer';
+      details = "AI (Artificial Intelligence) refers to the development of computer systems capable of performing tasks that typically require human intelligence, such as understanding language, recognizing patterns, and making decisions. It uses algorithms and models to process data, learn from it, and improve performance over time. AI powers technologies like machine learning, natural language processing, and robotics."
+        console.log("AI Engineering is your domain");
+    }
+
+    // Add stored submissions to the response
+    responseHTML += `<h3>Stored Submissions:</h3><pre>${JSON.stringify(submissions, null, 2)}</pre>`;
+
+    // Send the response to the client
+    res.render("YourDomain",{field: field_of_interest, details: details});
+});

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Chatbot-->
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "yc6oCI63iMgx6daW4bPtA",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="yc6oCI63iMgx6daW4bPtA"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+    <title>Educational Roadmap</title>
+</head>
+<body>
+    <!––Navbar––>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid navbar-elements">
+          <a class="navbar-brand" href="/">XYZ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutpg">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Domain
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="artificialintelligence">Artificial Intelligence</a></li>
+                  <li><a class="dropdown-item" href="datascience">Data Science</a></li>
+                  <li><a class="dropdown-item" href="webdevelopment">Web Development</a></li>
+                  <li><a class="dropdown-item" href="softwaredevelopment">Software Development</a></li>
+                  <li><a class="dropdown-item" href="webdesign">Web Designing</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!––Main image––>
+      <div class="bg-img-div">
+        <img src="images/main.png" class="bg-img img-fluid">
+        <h2 class="banner-text1">Welcome to XYZ</h2>
+        <p class="banner-text2">Are you struggling to find your field of interest? <br>
+          Do you find the wide range of choices overwhelming? <br>
+          Take this test to find out what suits you the best
+        </p>
+        <form action="/Test" method="get">
+          <button type="submit" value="submit" class="btn btn-success btn-lg test-btn">Take test</button>
+        </form>        
+      </div>
+
+      <!––About Us––>
+      <div id="aboutpg" class="about">
+        <h2>About XYZ</h2>
+        <p>XYZ is a platform to discover your passion in computer science with our personalized approach. Our mission is to simplify the journey for anyone interested in computer science by helping you discover your domain of interest and providing a clear roadmap to excel in it.  
+          Answer a few questions, and we’ll help identify your ideal domain—be it AI, software development, or cybersecurity. Get a custom roadmap with resources, courses, and projects to excel in your journey. 
+          Let’s simplify your path to success!</p>
+          <div class="container mt-5">
+            <div class="row">
+              <!-- Box 1 -->
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAgpJREFUaEPtmuFRwzAMhdVNYBOYBJiEYxJgEroJbALVXXIEY1mSJbu95uWu/+w8fZIsNVEOtLPrsDNeAvC1RxwRRoSvzAOtlL4jIv4dl98s9EciuhmlKwGz6OuGkKFfBoOz5sPi5FU6XVcC/hbCmW4AEdVAS/k0XS9wpuctoOngvcAR8B7QNPAosAc8AzQMngXcAh8B2g3uAb5fKje3DO3iIvNeqbrSvrUofVQWeHWb3cQDvK7l3swtywJucczWwFp36NFlBz6dOsBXaUAP8HqPCLjUZlrAXl3W4Oz4c0WAvQbweq2fWoA9uv/4MoAtBmig6z08wBbdocARo6ftzYzwNKOFSmjKDgAv3jN5K+Lpc+1FhBHh39yzvvC76OOAlEZKI6W1ByDCGT698byYgoeihaKFooWiVXoAVRpVWj4Vw7MDbQltacdtaeSr1tb8KVVXOsOfjVGKZoCn8HgGbSm6EjAPtXiU0roi4xIPaGlDRFd8iuFBGUNbBmalAa0IR0A1cFNmaY9tnoFZa+TJk7zygxUpe9ZR67PT4bVRq3nUUhrjAVf/bAsLaqka1e0GtgyuMkGzHB4GzgTXqm7Ngd6IpwFHwHtAeyOeDuwBzwD1gPPnDrflBq1Ke89lLeVGgFrAuTO8jQbeRvwcH6aqH8RmR9ibEdPXA3i6yycLIsKTHT5dDhGe7vLJgj/Te+o9GgQPNgAAAABJRU5ErkJggg=="/>
+                  <h3>Tailored Learning Paths</h3>
+                  <p>No two journeys are the same. We offer customized roadmaps based on your unique strengths and interests.</p>
+                </div>
+              </div>
+              <!-- Box 2 -->
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAd1JREFUaEPtWltOAzEMdG9CTwKchHIS4CTQkwAnAU4CHSlB291kFdt5VN2JFPHDxp4Zj3ereCcbW7uN4RUCvnbFqTAVvjIG1kr6TkSwa60PEfkOe34m4tyEXSMeYmEvVg7ws4g81YicOOMxJAPwLeO8hPPPUsgB/m0ENh4b2a9ZQUWCjgLcmM//4xf4CDhwkyppeMK6bgsa4JuI/FgDZHqOS2HvRwr8+p4BdJ/rqgoCUiINBYzcX0+vpcMMBLr1XgEs968XCTj1Gkq+PgwEELDI8tegpkt7PQzRqPBJBZa0wb94hB6mh1MMrHxpsWkZvMYuzS5tKBuNDfnhoWHLIAY9TA8bykZTlfSwhi2DGPQwPWwoG01V0sMatgxi0MP0sKFsNFVJD2vYMohBD9PDhrLRVCU9rGHLIAY9fMke1goaJ3bw9xjuf9cUxv3xw2SaB1M93uW6H/YGj2NL8/vhlgMuxYC/Ks5MeYnyPL8pwMnJgtxrCf6J8xg1vORRyfIsBmRwDQvQZ6vGfVEuoThKiLmOUtLg59jgFslakPcEPI1VMmIIVTCW2HS1VHie+BroLmCRUE/AiJcC3Q3sCMARNCbzsD4DCU3LeHp4b4W7AcsFIuDhEjROgAo3Jnj48X8d5bA9avmE4gAAAABJRU5ErkJggg=="/>
+                  <h3>Comprehensive Resources</h3>
+                  <p>From beginner to advanced, we provide resources for every step of your learning process.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAttJREFUaEPtmrvuTUEUxn//uPRqJLyAQqIjqHVewO0JSPg37jRIeAK3F9CpETqJwgtQUOuFcD7ZO9nGXPfeM2e2M6s9s2fWt741a75ZZ7bYMNvaMLw0wP87443hAgw/BU5067wGbgGfC6z7Z4nSDH8CDhjgBPZkKdAlAd8EbjiYFMv6PbuVBPxqkMomMKW2WM5uJQFr757dJIZVqATa3MOKgdgVy9mtJMMCY2O52P5dR5W2Fa4GOGdel07pRTHcKyRb0clJSmhuFbvnXdELKrYYhgVwKAdDDqzr9yjFFgPYJxjWBc61blDAhACLXenfJdlBny4PAfbp31qDcG4lbp65nBsDuOi5GYhqctVvgI2IJkewcJ4n+9cYnonhnavL/i/g50jGd3TdmB817+HdwCXgPLAHeNkJljeJoI8DqrSngG/AY+AR8N0yz1pT+gpwz3DqY+f8h0jQh7sgHTLGa+4HuQHrwq4eVN9h7NezHUtHgBfAPotTtz29LHO45r5umeMLcHrF+vuILdd3Qq0NBVfRSm24nfEc9u+AY5EMvwWOOsaqPaRLwtBS/XS2aVVwXGZj+Cpwx/HBVwfz5vBdnYzd65jnGnA3AbAuE5KZf5mL4TkBKx33RzA8N2At+Q++uQDXmNJZAddUtIbJlI1hLXIZuJ/pWNq2zK2lQre5rIAlPC4CF2YWHk+AhwnCYxTDtj+9fOdwRE3KMsTHcFKVTj7fssAJT+rz09oI8N2WUpRW2LU8I2yARymt3r1kcZ4Hl3PWZP/afThCuoV6Wj6VNiYBfKRUwXADPIbWwTeN4UEwWkp3z6CcD2RalZ6hSk/cskmfV5HSSR5PHNwAtz0c2dPqh6lTqH//l2ReJRiq0rox6QXAksz7yC0EWEB9zYDaAjH5yYMA6dmDWK7t9Y4ZbGuHwxwUw/Dwbqw/ugS8JvBiVWDV4QhaCuDgZEsY0AAvgaUpPjaGp0RvCd/+Bm/w3T0AP1ENAAAAAElFTkSuQmCC"/>
+                  <h3>Chatbot for guidance</h3>
+                  <p>Our specific chatbot answers to any of your queries related to any domain.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row mt-4">
+      </div>
+    </div>
+  </div>
+
+      <!––Carousel––>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/artificialintelligence.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Artificial Intelligence</h5>
+              <p>Transform data into intelligent actions with cutting-edge algorithms and machine learning.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/DataScience.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Data Science</h5>
+              <p>Unlock insights from raw data to drive informed decisions and predictions.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/WebDevelopment.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web development</h5>
+              <p>Build dynamic, interactive websites and applications that connect the world.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/WebDesign.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web designing</h5>
+              <p>Craft visually stunning and user-friendly web experiences.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/SoftwareDevelopment.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Software development</h5>
+              <p>Create powerful, efficient software solutions to solve real-world problems.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--How it works-->
+      <div class="howitworks">
+        <h1>How It Works?</h1>
+      <div class="container chat-container d-flex flex-column">
+        <!-- Chat Message 1 (Left) -->
+        <div class="d-flex flex-column message message-left">
+          <span>Step 1: Take the Quiz
+            Answer a series of personalized questions designed to understand your skills, preferences, and career goals.</span>
+        </div>
+        
+        <!-- Chat Message 2 (Right) -->
+        <div class="d-flex flex-column message message-right">
+          <span>Step 2: Discover Your Domain
+            Our system analyzes your answers and suggests the computer science domain that fits you the best.</span>
+        </div>
+    
+        <!-- Chat Message 3 (Left) -->
+        <div class="d-flex flex-column message message-left">
+          <span>Step 3: Follow Your Roadmap
+            Get a personalized learning path with resources, courses, and projects tailored to your domain.</span>
+        </div>
+      
+        <!-- Chat Message 4 (Right) -->
+        <div class="d-flex flex-column message message-right">
+          <span>Step 4: Download your roadmap
+            Once received the roadmap, Download it for future reference.</span>
+        </div>
+
+      </div>
+    </div>
+    
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>About XYZ</h5>
+            <p>Helping you find your path in computer science with personalized roadmaps and resources.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="/">Home</a></li>
+              <li><a href="#aboutpg">About</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Contact Us</h5>
+            <p>Email: support@xyz.com</p>
+            <p>Phone: +1-234-567-890</p>
+            <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="text-center py-3">
+          <p>&copy; 2024 XYZ. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+
+<script src="app.js"></script>
+</html>

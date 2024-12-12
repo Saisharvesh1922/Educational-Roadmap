@@ -1,0 +1,204 @@
+.navbar-elements{
+  padding: 0 10% 0 10%; 
+}
+.bg-img-div {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Ensures that content stays within the viewport */
+}
+
+.bg-img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the image covers the screen while maintaining aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Pushes the image behind other content */
+}
+
+.bg-img-div .banner-text1,
+.bg-img-div .banner-text2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  color: rgb(0, 0, 0); 
+  z-index: 1; 
+}
+
+.bg-img-div .banner-text1 {
+  top: 25%; /* Vertical alignment */
+  font-size: 5vw; /* Responsive font size */
+  text-align: center;
+}
+
+.bg-img-div .banner-text2 {
+  top: 40%; /* Vertical alignment */
+  font-size: 1.7vw; /* Responsive font size */
+  text-align: center;
+}
+
+/* Media Query for smaller screens */
+
+.test-btn {
+  position: absolute;
+  top: 65%;             
+  left: 50%;           
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+}
+
+
+.about{
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(237, 246, 245);
+}
+
+.about h2{
+    font-size: 30px;
+}
+.about p{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-md-4, .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensures all boxes grow to the same height */
+  }
+  .box h3 {
+    margin-bottom: 15px;
+  }
+
+.carousel {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: auto; /* Center the carousel horizontally */
+}
+
+.carousel-caption{
+  background-color: rgba(0, 0, 0, 0.467);
+}
+
+.howitworks{
+    background-color: #ffffff;
+    margin-top: 100px;
+}
+.howitworks h1{
+    text-align: center;
+}
+.chat-container {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 500px;
+   
+  }
+  .message {
+    padding: 15px 20px;
+    border-radius: 20px;
+    max-width: 75%;
+    font-size: 1.2rem; /* Increased font size */
+    margin-bottom: 15px;
+  }
+  .message-left {
+    background-color: #c5c6c7;
+    align-self: flex-start;
+    margin-left: 0; /* Align to extreme left */
+  }
+  .message-right {
+    background-color: #0d6efd;
+    color: white;
+    align-self: flex-end;
+    margin-right: 0; /* Align to extreme right */
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .bg-img-div .banner-text1 {
+        font-size: 8vw; /* Adjust text size for smaller screens */
+        top: 25%; /* Adjust positioning */
+    }
+    
+    .bg-img-div .banner-text2 {
+        font-size: 4vw; /* Adjust text size for smaller screens */
+        top: 40%; /* Adjust positioning */
+    }
+    .test-btn {
+      position: absolute;
+      top: 75%;             
+      left: 50%;           
+      transform: translate(-50%, -50%); 
+      z-index: 1;
+    }
+    .about p{
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 15px;
+  }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .bg-img-div .banner-text1 {
+        font-size: 10vw; /* Adjust text size for very small screens */
+        top: 20%; /* Adjust positioning */
+    }
+    
+    .bg-img-div .banner-text2 {
+        font-size: 5vw; /* Adjust text size for very small screens */
+        top: 35%; /* Adjust positioning */
+    }
+  }
+  
+  .footer {
+    background-color: rgb(237, 246, 245);
+    padding: 40px 0;
+    color: #333;
+    margin-top: 150px;
+    padding-bottom: 0px;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .fab {
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .footer .fab:hover {
+    color: #0056b3;
+  }
+  

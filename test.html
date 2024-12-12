@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="test-styles.css">
+    <title>Test</title>
+</head>
+<body>
+    
+    <div class="page">
+        <h2>Find your Tech!</h2><br>
+        <div class="questions">
+            <form action="/evaluate" method="post">
+                <!-- Question 1 -->
+                <p>1. Do you enjoy creating visually appealing designs?</p>
+                <label><input type="radio" name="q1" value="web_design"> Yes</label>
+                <label><input type="radio" name="q1" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 2 -->
+                <p>2. Do you like working with large sets of numbers and patterns?</p>
+                <label><input type="radio" name="q2" value="data_science"> Yes</label>
+                <label><input type="radio" name="q2" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 3 -->
+                <p>3. Are you curious about how to teach machines to learn?</p>
+                <label><input type="radio" name="q3" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q3" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 4 -->
+                <p>4. Do you enjoy building secure and fast websites?</p>
+                <label><input type="radio" name="q4" value="web_dev"> Yes</label>
+                <label><input type="radio" name="q4" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 5 -->
+                <p>5. Are you interested in designing websites that look great on any device?</p>
+                <label><input type="radio" name="q5" value="web_design"> Yes</label>
+                <label><input type="radio" name="q5" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 6 -->
+                <p>6. Do you find it exciting to analyze data to uncover insights?</p>
+                <label><input type="radio" name="q6" value="data_science"> Yes</label>
+                <label><input type="radio" name="q6" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 7 -->
+                <p>7. Are you passionate about building smart systems like chatbots?</p>
+                <label><input type="radio" name="q7" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q7" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 8 -->
+                <p>8. Do you enjoy creating responsive layouts for websites?</p>
+                <label><input type="radio" name="q8" value="web_design"> Yes</label>
+                <label><input type="radio" name="q8" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 9 -->
+                <p>9. Do you like working with databases and APIs?</p>
+                <label><input type="radio" name="q9" value="web_dev"> Yes</label>
+                <label><input type="radio" name="q9" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 10 -->
+                <p>10. Are you interested in visualizing data to make it easier to understand?</p>
+                <label><input type="radio" name="q10" value="data_science"> Yes</label>
+                <label><input type="radio" name="q10" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 11 -->
+                <p>11. Do you find satisfaction in designing intuitive user interfaces?</p>
+                <label><input type="radio" name="q11" value="web_design"> Yes</label>
+                <label><input type="radio" name="q11" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 12 -->
+                <p>12. Do you enjoy working with tools like Python for data analysis?</p>
+                <label><input type="radio" name="q12" value="data_science"> Yes</label>
+                <label><input type="radio" name="q12" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 13 -->
+                <p>13. Are you interested in making machines predict outcomes?</p>
+                <label><input type="radio" name="q13" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q13" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 14 -->
+                <p>14. Do you enjoy designing content and layouts for websites?</p>
+                <label><input type="radio" name="q14" value="web_design"> Yes</label>
+                <label><input type="radio" name="q14" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 15 -->
+                <p>15. Are you fascinated by the potential of AI to solve real-world problems?</p>
+                <label><input type="radio" name="q15" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q15" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 16 -->
+                <p>16. Do you like developing backend systems for websites?</p>
+                <label><input type="radio" name="q16" value="web_dev"> Yes</label>
+                <label><input type="radio" name="q16" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 17 -->
+                <p>17. Are you interested in working with datasets to find trends?</p>
+                <label><input type="radio" name="q17" value="data_science"> Yes</label>
+                <label><input type="radio" name="q17" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 18 -->
+                <p>18. Do you enjoy optimizing designs for user experience?</p>
+                <label><input type="radio" name="q18" value="web_design"> Yes</label>
+                <label><input type="radio" name="q18" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 19 -->
+                <p>19. Do you enjoy creating interactive and functional web apps?</p>
+                <label><input type="radio" name="q19" value="web_dev"> Yes</label>
+                <label><input type="radio" name="q19" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 20 -->
+                <p>20. Are you curious about how to automate tasks using AI?</p>
+                <label><input type="radio" name="q20" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q20" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 21 -->
+                <p>21. Do you enjoy creating designs that balance form and function?</p>
+                <label><input type="radio" name="q21" value="web_design"> Yes</label>
+                <label><input type="radio" name="q21" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 22 -->
+                <p>22. Are you passionate about turning data into actionable insights?</p>
+                <label><input type="radio" name="q22" value="data_science"> Yes</label>
+                <label><input type="radio" name="q22" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 23 -->
+                <p>23. Are you excited about using AI for image and speech recognition?</p>
+                <label><input type="radio" name="q23" value="ai_engineer"> Yes</label>
+                <label><input type="radio" name="q23" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 24 -->
+                <p>24. Do you enjoy building secure database-driven websites?</p>
+                <label><input type="radio" name="q24" value="web_dev"> Yes</label>
+                <label><input type="radio" name="q24" value="no"> No</label>
+                <hr>
+    
+                <!-- Question 25 -->
+                <p>25. Are you interested in presenting data visually for better understanding?</p>
+                <label><input type="radio" name="q25" value="data_science"> Yes</label>
+                <label><input type="radio" name="q25" value="no"> No</label>
+                <hr>
+    
+                
+                    <!-- Question 26 -->
+                    <p>26. Do you enjoy working on projects that require a deep understanding of algorithms?</p>
+                    <label><input type="radio" name="q26" value="software_dev"> Yes</label>
+                    <label><input type="radio" name="q26" value="no"> No</label>
+                    <hr>
+                     
+                     <!-- Question 27 -->
+                    <p>27. Are you excited about the future of artificial intelligence and its potential applications?</p>
+                    <label><input type="radio" name="q27" value="ai_engineer"> Yes</label>
+                    <label><input type="radio" name="q27" value="no"> No</label>
+                    <hr>
+
+                    <!-- Question 28 -->
+                    <p>28. Do you enjoy creating secure and efficient database structures?</p>
+                    <label><input type="radio" name="q28" value="web_dev"> Yes</label>
+                    <label><input type="radio" name="q28" value="no"> No</label>
+                    <hr>
+
+                    <!-- Question 29 -->
+                    <p>29. Do you prefer working on data analysis over front-end design?</p>
+                    <label><input type="radio" name="q29" value="data_science"> Yes</label>
+                    <label><input type="radio" name="q29" value="no"> No</label>
+                     <hr>
+
+                    <!-- Question 30 -->
+                    <p>30. Are you interested in combining software engineering and artificial intelligence?</p>
+                    <label><input type="radio" name="q30" value="ai_engineer"> Yes</label>
+                    <label><input type="radio" name="q30" value="no"> No</label>
+                    <hr>
+
+                    <p>Do you have experience with any specific technologies or programming languages? If yes, list them below:</p>
+                    <textarea name="known_technologies" rows="4" cols="50" placeholder="E.g., Python, JavaScript, React, SQL"></textarea>
+                    <hr>
+
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
